@@ -1,0 +1,74 @@
+.app-layout__header {
+  background: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 0 24px;
+}
+
+.app-layout__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.table-row--active td {
+  background-color: #e6f4ff !important;
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+  .app-layout__header {
+    padding: 0 16px;
+  }
+  
+  .ant-layout-content {
+    padding: 16px 12px !important;
+  }
+  
+  .ant-card {
+    margin-bottom: 16px;
+  }
+  
+  .ant-tabs-tab {
+    padding: 8px 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-layout__header {
+    padding: 0 12px;
+  }
+  
+  .ant-layout-content {
+    padding: 12px 8px !important;
+  }
+  
+  .ant-card .ant-card-body {
+    padding: 16px;
+  }
+}
+
+/* Enhanced visual polish */
+.ant-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f0;
+}
+
+.ant-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background-color: #f5f5f5 !important;
+  cursor: pointer;
+}
+
+/* Loading states */
+.ant-spin-container {
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Better button spacing */
+.ant-space-item .ant-btn {
+  margin: 0 !important;
+}
